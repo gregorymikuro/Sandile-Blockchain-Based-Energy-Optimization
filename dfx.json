@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "Sandile_backend": {
+      "candid": "src/Sandile_backend/Sandile_backend.did",
+      "package": "Sandile_backend",
+      "type": "rust"
+    },
+    "Sandile_frontend": {
+      "dependencies": [
+        "Sandile_backend"
+      ],
+      "source": [
+        "src/Sandile_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Sandile_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/Sandile_backend"
+]
+resolver = "2"
