@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="bg-[#0072b1] py-6 px-10 flex justify-between items-center text-white">
       {/* Branding */}
-      <h1 className="text-lg font-medium">Sandile Energies Dashboard</h1>
+      <h1 className="text-lg font-medium">Dashboard</h1>
 
       {/* Navigation Links */}
       <nav>

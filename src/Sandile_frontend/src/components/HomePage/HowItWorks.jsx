@@ -8,10 +8,11 @@ const HowItWorks = () => {
       style={{ backgroundImage: "/images/background-placeholder.jpg" }} // Replace with your background image path
     >
       {/* Section Heading */}
-      <h2 className="text-5xl font-bold mb-12 font-serif text-white">How It Works</h2>
-      <p className="text-base text-gray-200 mb-16 max-w-2xl mx-auto">
+      <h2 className="text-5xl font-bold mb-12 font-serif text-black">How It Works</h2>
+      <p className="text-base text-gray-800 mb-16 max-w-2xl mx-auto">
         Understand how our energy solutions work to make your life more sustainable.
       </p>
+
 
       {/* Steps with Mixed Layouts */}
       <div className="relative z-10 space-y-16">
