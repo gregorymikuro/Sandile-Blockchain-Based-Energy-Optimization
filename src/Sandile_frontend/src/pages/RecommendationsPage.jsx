@@ -96,7 +96,7 @@ const RecommendationsPage = () => {
       {/* Recommendation Cards Section */}
       <section className="recommendations-section bg-white shadow-md rounded-lg p-8">
         <h2 className="text-3xl font-bold text-[#0072b1] text-center mb-10">
-          Your Energy Recommendations
+          Energy Recommendations
         </h2>
 
         {/* Cards with Recommendations */}

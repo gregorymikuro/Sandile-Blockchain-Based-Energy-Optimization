@@ -18,15 +18,15 @@ const HeroSection = () => {
       <header className="absolute top-0 w-full flex justify-between items-center px-12 py-6 text-white z-10">
         {/* Logo */}
         <div
-          className="font-bold text-2xl font-serif tracking-wider cursor-pointer"
-          onClick={() => navigate('/')}
+          className="font-bold text-2xl font-serif tracking-wider cursor-pointer transition-transform duration-300 hover:scale-110 hover:text-[#005bbb]"
+          onClick={() => window.location.reload()}
         >
           Sandile Energies
         </div>
 
         {/* Navigation Links */}
         <nav className="flex space-x-8 font-medium text-sm">
-          {/* Placeholder Navigation for Services */}
+          {/* Services Navigation */}
           <button
             onClick={() => navigate('/services')}
             className="relative group transition-all duration-300 hover:text-[#005bbb]"
@@ -35,7 +35,7 @@ const HeroSection = () => {
             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#005bbb] transition-all duration-300 group-hover:w-full"></div>
           </button>
 
-          {/* Placeholder Navigation for Contact Us */}
+          {/* Contact Us Navigation */}
           <button
             onClick={() => navigate('/contact')}
             className="relative group transition-all duration-300 hover:text-[#005bbb]"
