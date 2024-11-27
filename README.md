@@ -46,14 +46,14 @@ Follow these steps to set up the **Sandile Energies** web application on your lo
 ### Prerequisites
 
 - **Node.js** (v14 or later)
-- **npm** or **yarn**
+- **npm**
 - **Internet Connection** (for ICP login)
 
 ### Installation
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/username/sandile-energies.git
+   git clone https://github.com/username/sandile-energies.git](https://github.com/gregorymikuro/Sandile-Blockchain-Based-Energy-Optimization
    cd sandile-energies
    ```
 
