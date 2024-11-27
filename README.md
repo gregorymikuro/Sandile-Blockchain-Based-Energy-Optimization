@@ -53,7 +53,7 @@ Follow these steps to set up the **Sandile Energies** web application on your lo
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/username/sandile-energies.git](https://github.com/gregorymikuro/Sandile-Blockchain-Based-Energy-Optimization
+   git clone https://github.com/gregorymikuro/Sandile-Blockchain-Based-Energy-Optimization
    cd sandile-energies
    ```
 
