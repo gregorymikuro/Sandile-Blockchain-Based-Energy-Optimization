@@ -4,7 +4,6 @@ import RecommendationList from '../components/RecommendationList';
 const AnalyzePage = () => {
   return (
     <main>
-      <h1>Analyze My Energy Usage</h1>
       <RecommendationList />
     </main>
   );
