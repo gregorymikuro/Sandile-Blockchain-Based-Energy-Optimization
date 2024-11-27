@@ -3,18 +3,36 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="bg-green-500 p-4 flex justify-between items-center text-white">
-      <h1 className="text-xl font-bold">Energy Dashboard</h1>
+    <header className="bg-[#0072b1] py-6 px-10 flex justify-between items-center text-white">
+      {/* Branding */}
+      <h1 className="text-lg font-medium">Sandile Energies Dashboard</h1>
+
+      {/* Navigation Links */}
       <nav>
-        <ul className="flex gap-6">
+        <ul className="flex gap-8">
           <li>
-            <Link className="hover:underline" to="/">Home</Link>
+            <Link
+              className="text-sm hover:underline hover:text-gray-400 transition-all duration-300"
+              to="/"
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link className="hover:underline" to="/analyze">Analyze Usage</Link>
+            <Link
+              className="text-sm hover:underline hover:text-gray-400 transition-all duration-300"
+              to="/analyze"
+            >
+              Analyze Usage
+            </Link>
           </li>
           <li>
-            <Link className="hover:underline" to="/recommendations">Recommendations</Link>
+            <Link
+              className="text-sm hover:underline hover:text-gray-400 transition-all duration-300"
+              to="/recommendations"
+            >
+              Recommendations
+            </Link>
           </li>
         </ul>
       </nav>

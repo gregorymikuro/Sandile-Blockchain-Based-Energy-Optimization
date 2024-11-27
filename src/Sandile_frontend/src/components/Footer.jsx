@@ -1,6 +1,6 @@
 import React from 'react';
 // Importing icons from a library like FontAwesome for demonstration purposes
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaArrowRight, FaInfoCircle, FaBriefcase } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaArrowRight, FaInfoCircle, FaBriefcase, FaChartBar, FaLightbulb } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -23,10 +23,36 @@ const Footer = () => {
           <div className="space-y-3">
             <h3 className="font-medium text-lg mb-2 animate-fade-in">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/about" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300"><FaInfoCircle className="mr-2" /> About Us</a></li>
-              <li><a href="/services" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300"><FaArrowRight className="mr-2" /> Our Services</a></li>
-              <li><a href="/contact" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300"><FaInfoCircle className="mr-2" /> Contact</a></li>
-              <li><a href="/careers" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300"><FaBriefcase className="mr-2" /> Careers</a></li>
+              <li>
+                <a href="/about" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                  <FaInfoCircle className="mr-2" /> About Us
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                  <FaArrowRight className="mr-2" /> Our Services
+                </a>
+              </li>
+              <li>
+                <a href="/analyze" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                  <FaChartBar className="mr-2" /> Analyze Page
+                </a>
+              </li>
+              <li>
+                <a href="/recommendations" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                  <FaLightbulb className="mr-2" /> Recommendations
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                  <FaInfoCircle className="mr-2" /> Contact
+                </a>
+              </li>
+              <li>
+                <a href="/careers" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                  <FaBriefcase className="mr-2" /> Careers
+                </a>
+              </li>
             </ul>
           </div>
           <div className="space-y-3">

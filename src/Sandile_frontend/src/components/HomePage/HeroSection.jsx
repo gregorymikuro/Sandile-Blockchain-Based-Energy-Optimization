@@ -26,27 +26,16 @@ const HeroSection = () => {
 
         {/* Navigation Links */}
         <nav className="flex space-x-8 font-medium text-sm">
-          <button
-            onClick={() => navigate('/analyze')}
-            className="relative group transition-all duration-300 hover:text-[#005bbb]"
-          >
-            <span className="hover:underline">Analyze Usage</span>
-            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#005bbb] transition-all duration-300 group-hover:w-full"></div>
-          </button>
-          <button
-            onClick={() => navigate('/recommendations')}
-            className="relative group transition-all duration-300 hover:text-[#005bbb]"
-          >
-            <span className="hover:underline">Recommendations</span>
-            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#005bbb] transition-all duration-300 group-hover:w-full"></div>
-          </button>
+          {/* Placeholder Navigation for Services */}
           <button
             onClick={() => navigate('/services')}
             className="relative group transition-all duration-300 hover:text-[#005bbb]"
           >
             <span className="hover:underline">Services</span>
-            <div className="absolute bottom-0 left-0 w-0.5 h-0.5 bg-[#005bbb] transition-all duration-300 group-hover:w-full"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#005bbb] transition-all duration-300 group-hover:w-full"></div>
           </button>
+
+          {/* Placeholder Navigation for Contact Us */}
           <button
             onClick={() => navigate('/contact')}
             className="relative group transition-all duration-300 hover:text-[#005bbb]"
@@ -67,13 +56,13 @@ const HeroSection = () => {
         </p>
         <div className="flex space-x-6 mt-4">
           <button
-            onClick={() => navigate('/icp-chain')}
+            onClick={() => navigate('/icp-login')}
             className="bg-transparent border-2 border-white text-white px-8 py-3 transition-transform duration-300 hover:scale-110 hover:bg-white hover:text-black"
           >
             Get Started
           </button>
           <button
-            onClick={() => navigate('/services')}
+            onClick={() => navigate('/learn-more')}
             className="bg-[#005bbb] text-white px-8 py-3 border-2 border-[#005bbb] transition-transform duration-300 hover:scale-110 hover:bg-transparent hover:text-[#005bbb]"
           >
             Learn More

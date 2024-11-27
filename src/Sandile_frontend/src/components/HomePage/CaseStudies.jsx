@@ -103,7 +103,7 @@ const caseStudiesData = [
     statistic: 40,
     suffix: '%',
     description: 'Projected energy savings through our AI-driven optimization solutions.',
-    image: '/images/energy_saving.jpg',
+    image: '/images/energy_saving.png',
   },
   {
     title: 'Cost Savings per Household',

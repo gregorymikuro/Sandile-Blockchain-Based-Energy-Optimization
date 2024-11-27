@@ -5,7 +5,7 @@ const HowItWorks = () => {
   return (
     <div 
       className="relative bg-cover bg-center bg-no-repeat py-16 px-8 text-center" 
-      style={{ backgroundImage: "url('/images/background-placeholder.jpg')" }} // Replace with your background image path
+      style={{ backgroundImage: "/images/background-placeholder.jpg" }} // Replace with your background image path
     >
       {/* Section Heading */}
       <h2 className="text-5xl font-bold mb-12 font-serif text-white">How It Works</h2>
@@ -25,7 +25,7 @@ const HowItWorks = () => {
           transition={{ duration: 0.7, delay: 0.1 }}
         >
           <div className="image-placeholder bg-gray-200 h-64 w-full rounded-md mb-6">
-            <img src="/images/step1.png" alt="Step 1: Initial Assessment" className="w-full h-full object-cover rounded-md" />
+            <img src="/images/step1.jpg" alt="Step 1: Initial Assessment" className="w-full h-full object-cover rounded-md" />
           </div>
           <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 1: Initial Assessment</h3>
           <p className="text-base text-gray-600 leading-relaxed">
@@ -44,7 +44,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <div className="image-placeholder bg-gray-200 h-48 w-full rounded-md mb-6">
-              <img src="/images/step2.png" alt="Step 2: Customized Solutions" className="w-full h-full object-cover rounded-md" />
+              <img src="/images/step2.jpg" alt="Step 2: Customized Solutions" className="w-full h-full object-cover rounded-md" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 2: Customized Solutions</h3>
             <p className="text-base text-gray-600 leading-relaxed">
@@ -61,7 +61,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.7, delay: 0.3 }}
           >
             <div className="image-placeholder bg-gray-200 h-48 w-full rounded-md mb-6">
-              <img src="/images/step3.png" alt="Step 3: Implementation" className="w-full h-full object-cover rounded-md" />
+              <img src="/images/step3.jpg" alt="Step 3: Implementation" className="w-full h-full object-cover rounded-md" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 3: Implementation</h3>
             <p className="text-base text-gray-600 leading-relaxed">
@@ -80,7 +80,7 @@ const HowItWorks = () => {
           transition={{ duration: 0.7, delay: 0.4 }}
         >
           <div className="image-placeholder bg-gray-200 h-64 w-full rounded-md mb-6">
-            <img src="/images/step4.png" alt="Step 4: Monitoring & Optimization" className="w-full h-full object-cover rounded-md" />
+            <img src="/images/step4.jpg" alt="Step 4: Monitoring & Optimization" className="w-full h-full object-cover rounded-md" />
           </div>
           <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 4: Monitoring & Optimization</h3>
           <p className="text-base text-gray-600 leading-relaxed">
@@ -99,7 +99,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.7, delay: 0.5 }}
           >
             <div className="image-placeholder bg-gray-200 h-48 w-full rounded-md mb-6">
-              <img src="/images/step5.png" alt="Step 5: Energy Audits" className="w-full h-full object-cover rounded-md" />
+              <img src="/images/step5.jpg" alt="Step 5: Energy Audits" className="w-full h-full object-cover rounded-md" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 5: Energy Audits</h3>
             <p className="text-base text-gray-600 leading-relaxed">
@@ -116,7 +116,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.7, delay: 0.6 }}
           >
             <div className="image-placeholder bg-gray-200 h-48 w-full rounded-md mb-6">
-              <img src="/images/step6.png" alt="Step 6: Reporting" className="w-full h-full object-cover rounded-md" />
+              <img src="/images/step6.jpg" alt="Step 6: Reporting" className="w-full h-full object-cover rounded-md" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 6: Reporting</h3>
             <p className="text-base text-gray-600 leading-relaxed">
@@ -135,7 +135,7 @@ const HowItWorks = () => {
           transition={{ duration: 0.7, delay: 0.7 }}
         >
           <div className="image-placeholder bg-gray-200 h-64 w-full rounded-md mb-6">
-            <img src="/images/step7.png" alt="Step 7: Customer Support" className="w-full h-full object-cover rounded-md" />
+            <img src="/images/step7.jpg" alt="Step 7: Customer Support" className="w-full h-full object-cover rounded-md" />
           </div>
           <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 7: Customer Support</h3>
           <p className="text-base text-gray-600 leading-relaxed">
@@ -154,7 +154,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.7, delay: 0.8 }}
           >
             <div className="image-placeholder bg-gray-200 h-48 w-full rounded-md mb-6">
-              <img src="/images/step8.png" alt="Step 8: Energy Optimization Tips" className="w-full h-full object-cover rounded-md" />
+              <img src="/images/step8.jpg" alt="Step 8: Energy Optimization Tips" className="w-full h-full object-cover rounded-md" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 8: Energy Optimization Tips</h3>
             <p className="text-base text-gray-600 leading-relaxed">
@@ -171,7 +171,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.7, delay: 0.9 }}
           >
             <div className="image-placeholder bg-gray-200 h-48 w-full rounded-md mb-6">
-              <img src="/images/step9.png" alt="Step 9: Scaling & Expansion" className="w-full h-full object-cover rounded-md" />
+              <img src="/images/step9.jpg" alt="Step 9: Scaling & Expansion" className="w-full h-full object-cover rounded-md" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-gray-800">Step 9: Scaling & Expansion</h3>
             <p className="text-base text-gray-600 leading-relaxed">
