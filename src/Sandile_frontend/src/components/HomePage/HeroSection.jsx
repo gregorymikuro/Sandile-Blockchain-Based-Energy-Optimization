@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import ICPLogin from '../ICPLogin'; // Importing the ICPLogin component
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -55,15 +56,15 @@ const HeroSection = () => {
           Helping you save energy and reduce costs through cutting-edge, blockchain-driven solutions.
         </p>
         <div className="flex space-x-6 mt-4">
-          <button
-            onClick={() => navigate('/icp-login')}
-            className="bg-transparent border-2 border-white text-white px-8 py-3 transition-transform duration-300 hover:scale-110 hover:bg-white hover:text-black"
-          >
-            Get Started
-          </button>
+          {/* ICP Login Button */}
+          <ICPLogin 
+            buttonStyles="bg-[#005bbb] text-white px-8 py-3 border-2 border-[#005bbb] rounded-md transition-transform duration-300 hover:scale-110 hover:bg-white hover:text-[#005bbb]" 
+          />
+
+          {/* Learn More Button */}
           <button
             onClick={() => navigate('/learn-more')}
-            className="bg-[#005bbb] text-white px-8 py-3 border-2 border-[#005bbb] transition-transform duration-300 hover:scale-110 hover:bg-transparent hover:text-[#005bbb]"
+            className="bg-[#005bbb] text-white px-8 py-3 border-2 border-[#005bbb] rounded-md transition-transform duration-300 hover:scale-110 hover:bg-white hover:text-[#005bbb]"
           >
             Learn More
           </button>

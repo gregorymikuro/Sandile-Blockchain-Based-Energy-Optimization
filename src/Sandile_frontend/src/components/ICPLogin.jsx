@@ -79,15 +79,20 @@ const ICPLogin = () => {
       {isAuthenticated ? (
         <div>
           <h3 className="text-xl font-semibold mb-4 text-gray-800">Welcome to Sandile Energies</h3>
-          <button onClick={handleLogout} className="bg-red-600 text-white px-6 py-3 rounded-md">
+          <button 
+            onClick={handleLogout} 
+            className="bg-red-600 text-white px-6 py-3 rounded-md transition duration-300 hover:bg-red-700 hover:scale-110"
+          >
             Logout
           </button>
         </div>
       ) : (
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-gray-800">Login with Internet Identity</h3>
-          <button onClick={handleLogin} className="bg-[#0072b1] text-white px-6 py-3 rounded-md transition duration-300 hover:bg-[#005bbb]">
-            Login
+          <button 
+            onClick={handleLogin} 
+            className="bg-white text-[#005bbb] px-8 py-3 border-2 border-[#005bbb] rounded-md transition duration-300 hover:scale-110 hover:bg-[#005bbb] hover:text-white"
+          >
+            Login with Internet Identity
           </button>
         </div>
       )}

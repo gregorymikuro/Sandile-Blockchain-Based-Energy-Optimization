@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import ICPLogin from '../ICPLogin'; // Corrected path
+import ICPLogin from '../ICPLogin';
 
 const CallToAction = () => {
   const navigate = useNavigate();
@@ -17,21 +17,6 @@ const CallToAction = () => {
         Join thousands of homeowners and businesses making smarter energy decisions. Let us help you reduce energy costs, improve efficiency, and make a positive impact on the environment.
       </p>
 
-      {/* Call to Action Buttons */}
-      <div className="flex justify-center space-x-6 mb-8">
-        <button 
-          onClick={() => navigate('/icp-chain')} 
-          className="bg-gray-800 text-white px-8 py-3 rounded-md transition-transform duration-300 hover:scale-105 hover:bg-gray-700"
-        >
-          Get Started Now
-        </button>
-        <button 
-          onClick={() => navigate('/learn-more')}
-          className="bg-transparent border-2 border-gray-800 text-gray-800 px-8 py-3 rounded-md transition-transform duration-300 hover:scale-105 hover:bg-gray-800 hover:text-white"
-        >
-          Learn More
-        </button>
-      </div>
 
       {/* Login with Internet Identity Button */}
       <div className="flex justify-center mt-6">
