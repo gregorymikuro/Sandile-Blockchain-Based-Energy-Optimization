@@ -1,61 +1,166 @@
-# `Sandile`
+# Sandile Energies Web Application
 
-Welcome to your new `Sandile` project and to the Internet Computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+Welcome to the **Sandile Energies** web application! This project aims to help users reduce energy consumption and improve efficiency through cutting-edge, blockchain-driven solutions. The platform provides tools for analyzing energy usage, implementing recommendations, and promoting energy optimization.
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+## Table of Contents
 
-To learn more before you start working with `Sandile`, see the following documentation available online:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [Folder Structure](#folder-structure)
+- [Available Scripts](#available-scripts)
+- [Environment Variables](#environment-variables)
+- [ICP Login Integration](#icp-login-integration)
+- [Usage](#usage)
+  - [Analyzing Energy Usage](#analyzing-energy-usage)
+  - [Recommendations](#recommendations)
+- [License](#license)
 
-- [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
-- [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
-- [Rust Canister Development Guide](https://internetcomputer.org/docs/current/developer-docs/backend/rust/)
-- [ic-cdk](https://docs.rs/ic-cdk)
-- [ic-cdk-macros](https://docs.rs/ic-cdk-macros)
-- [Candid Introduction](https://internetcomputer.org/docs/current/developer-docs/backend/candid/)
+## Introduction
+The **Sandile Energies** platform is designed to help users make smarter energy decisions. It provides energy usage analytics, personalized energy-saving recommendations, and tools to implement and monitor energy efficiency improvements. The platform also includes Internet Computer (ICP) blockchain authentication for a secure and decentralized experience.
 
-If you want to start working on your project right away, you might want to try the following commands:
+## Features
 
-```bash
-cd Sandile/
-dfx help
-dfx canister --help
+- **Energy Usage Analysis**: Visual insights into your energy consumption, with charts like line graphs, bar charts, and pie charts.
+- **Recommendations**: Personalized suggestions for optimizing energy usage, including goal setting and progress tracking.
+- **ICP Login Integration**: Secure login using Internet Identity provided by the ICP blockchain.
+- **Interactive UI**: Engaging visual elements, including animations, charts, and dynamically updating components.
+
+## Technologies Used
+
+- **React**: Frontend framework for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Framer Motion**: Library for animations and transitions.
+- **Node.js** and **Express**: Server-side environment and framework.
+- **Vite**: Development build tool for fast and efficient bundling.
+- **@dfinity/auth-client**: Authentication client for ICP Internet Identity integration.
+
+## Getting Started
+
+Follow these steps to set up the **Sandile Energies** web application on your local environment.
+
+### Prerequisites
+
+- **Node.js** (v14 or later)
+- **npm** or **yarn**
+- **Internet Connection** (for ICP login)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/username/sandile-energies.git
+   cd sandile-energies
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Running the Application
+
+1. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+2. Open the application in your browser at [http://localhost:3000](http://localhost:3000).
+
+## Folder Structure
+
+The project follows the following folder structure:
+
+```
+src/
+  Sandile_backend/
+    src/
+      (Rust backend code)
+    Cargo.toml
+    Sandile_backend.did
+  Sandile_frontend/
+    public/
+      images/
+        (Logo images, partner logos, etc.)
+      videos/
+        bulb.mp4
+    src/
+      components/
+        Header.jsx
+        Footer.jsx
+        HeroSection.jsx
+        PartnerLogos.jsx
+        ICPLogin.jsx
+        CallToAction.jsx
+      pages/
+        HomePage.jsx
+        AnalyzePage.jsx
+        RecommendationsPage.jsx
+      assets/
+        images/
+        videos/
+      styles/
+        tailwind.css
+    index.html
+    package.json
+    postcss.config.js
+    tailwind.config.js
+    tsconfig.json
+    vite.config.js
+.gitignore
+Cargo.lock
+Cargo.toml
+README.md
+dfx.json
+generate_did.sh
+package-lock.json
+package.json
+tsconfig.json
 ```
 
-## Running the project locally
+## Available Scripts
 
-If you want to test your project locally, you can use the following commands:
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the app for production.
+- `npm run preview`: Previews the production build.
 
-```bash
-# Starts the replica, running in the background
-dfx start --background
+## Environment Variables
 
-# Deploys your canisters to the replica and generates your candid interface
-dfx deploy
+The application uses environment variables for configuration. You can create a `.env` file in the root directory with the following keys:
+
 ```
-
-Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
-
-If you have made changes to your backend canister, you can generate a new candid interface with
-
-```bash
-npm run generate
+CANISTER_ID=<YOUR_CANISTER_ID>
+DFX_NETWORK=ic
 ```
+Make sure to configure these based on your DFX and canister settings.
 
-at any time. This is recommended before starting the frontend development server, and will be run automatically any time you run `dfx deploy`.
+## ICP Login Integration
 
-If you are making frontend changes, you can start a development server with
+The application uses **@dfinity/auth-client** for Internet Identity authentication. Users can securely log in to access features such as setting energy goals and viewing personalized recommendations.
 
-```bash
-npm start
-```
+To use the ICP login feature, ensure that the **identityProvider** is set to `https://identity.ic0.app` in the `ICPLogin.tsx` component.
 
-Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
+## Usage
 
-### Note on frontend environment variables
+### Analyzing Energy Usage
+The **Analyze Page** includes interactive charts (line graphs, pie charts, and bar charts) that provide insights into your energy consumption. You can view daily, monthly, or annual usage data, allowing you to identify trends and opportunities for improvement.
 
-If you are hosting frontend code somewhere without using DFX, you may need to make one of the following adjustments to ensure your project does not fetch the root key in production:
+### Recommendations
+The **Recommendations Page** provides personalized energy-saving suggestions, each with actionable buttons:
+- **Set Goal**: Establish energy-saving objectives.
+- **Working Towards**: Track your progress.
+- **Ask for Help**: Request professional assistance.
+- **Mark as Completed**: Track completed energy-saving tasks.
 
-- set`DFX_NETWORK` to `ic` if you are using Webpack
-- use your own preferred method to replace `process.env.DFX_NETWORK` in the autogenerated declarations
-  - Setting `canisters -> {asset_canister_id} -> declarations -> env_override to a string` in `dfx.json` will replace `process.env.DFX_NETWORK` with the string in the autogenerated declarations
-- Write your own `createActor` constructor
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+We hope you enjoy using **Sandile Energies** to manage your energy consumption effectively. If you have any questions or run into issues, feel free to reach out through the **Contact Us** page.
+
