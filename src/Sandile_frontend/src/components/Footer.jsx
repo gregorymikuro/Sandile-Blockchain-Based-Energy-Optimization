@@ -1,12 +1,12 @@
 import React from 'react';
 // Importing icons from a library like FontAwesome for demonstration purposes
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaArrowRight, FaInfoCircle, FaBriefcase, FaChartBar, FaLightbulb } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaArrowRight, FaInfoCircle, FaBriefcase, FaChartBar, FaLightbulb, FaUser } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="bg-[#0072b1] text-white py-10">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-4 md:px-10 lg:px-16">
-        
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 px-4 md:px-10 lg:px-16">
+
         {/* Branding and Description */}
         <div className="flex flex-col items-center md:items-start space-y-3 text-center md:text-left">
           <img
@@ -34,16 +34,6 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/analyze" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
-                <FaChartBar className="mr-2" /> Analyze Page
-              </a>
-            </li>
-            <li>
-              <a href="/recommendations" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
-                <FaLightbulb className="mr-2" /> Recommendations
-              </a>
-            </li>
-            <li>
               <a href="/contact" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
                 <FaInfoCircle className="mr-2" /> Contact
               </a>
@@ -60,10 +50,43 @@ const Footer = () => {
         <div className="space-y-3">
           <h3 className="font-medium text-lg mb-2 animate-fade-in">Resources</h3>
           <ul className="space-y-2">
-            <li><a href="/blog" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300"><FaArrowRight className="mr-2" /> Blog</a></li>
-            <li><a href="/case-studies" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300"><FaArrowRight className="mr-2" /> Case Studies</a></li>
-            <li><a href="/faq" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300"><FaInfoCircle className="mr-2" /> FAQs</a></li>
-            <li><a href="/support" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300"><FaArrowRight className="mr-2" /> Support</a></li>
+            <li>
+              <a href="/blog" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                <FaArrowRight className="mr-2" /> Blog
+              </a>
+            </li>
+            <li>
+              <a href="/case-studies" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                <FaArrowRight className="mr-2" /> Case Studies
+              </a>
+            </li>
+            <li>
+              <a href="/faq" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                <FaInfoCircle className="mr-2" /> FAQs
+              </a>
+            </li>
+            <li>
+              <a href="/support" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                <FaArrowRight className="mr-2" /> Support
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* User Panel Links */}
+        <div className="space-y-3">
+          <h3 className="font-medium text-lg mb-2 animate-fade-in">User Panel</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="/analyze" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                <FaChartBar className="mr-2" /> Analyze Usage
+              </a>
+            </li>
+            <li>
+              <a href="/recommendations" className="flex items-center text-sm hover:text-gray-400 transition-all duration-300">
+                <FaLightbulb className="mr-2" /> Recommendations
+              </a>
+            </li>
           </ul>
         </div>
 
