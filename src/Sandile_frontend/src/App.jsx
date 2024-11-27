@@ -1,31 +1,43 @@
-import { useState } from 'react';
-import { Sandile_backend } from 'declarations/Sandile_backend';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AnalyzePage from './pages/AnalyzePage';
+import RecommendationsPage from './pages/RecommendationsPage';
+import Header from './components/Header';
+import Footer from './components/Footer'; // Assuming you have a Footer component
 
-function App() {
-  const [greeting, setGreeting] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    Sandile_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
+const App = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
-  );
-}
+    <div className="app-wrapper flex flex-col min-h-screen">
+      {/* Conditionally Render Header */}
+      {!isHomePage && <Header />}
 
-export default App;
+      {/* Page Content */}
+      <main className="flex-grow">
+        <Routes>
+          {/* HomePage is the default route */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/analyze" element={<AnalyzePage />} />
+          <Route path="/recommendations" element={<RecommendationsPage />} />
+
+          {/* Redirect any unknown paths back to the HomePage */}
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </main>
+
+      {/* Universal Footer */}
+      <Footer />
+    </div>
+  );
+};
+
+const AppWrapper = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;
